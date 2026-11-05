@@ -1,0 +1,9 @@
+services:
+  todo-app:
+    build: .
+    container_name: python-todo-app
+    ports:
+      - "5001:5000"
+    volumes:
+      - .:/app
+    restart: always
